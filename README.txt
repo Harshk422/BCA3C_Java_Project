@@ -55,20 +55,4 @@ LOOK (NEON THEME)
   Dark navy-to-violet gradient, glowing cyan X / pink O / gold win line, glowing grid,
   neon pill buttons, animated title and X / Draws / O score cards (Theme.java holds the colours).
 
-JAVA CONCEPTS USED (useful for viva)
-  Classes & objects, encapsulation (private fields + getters), enum (Difficulty)
-  Inheritance + abstract class: Player -> HumanPlayer, ComputerPlayer
-  Polymorphism: PlayerManager and GameWindow treat both as Player
-  Method overloading: InputValidator.validateMove(int) / validateMove(String)
-  Method overriding: isComputer(), getType(), toString(), paintComponent()
-  Interface: BoardPanel.CellClickListener (implemented by GameWindow)
-  Custom checked exceptions: InvalidInputException <- InvalidMoveException
-  Collections: List / ArrayList / Deque (undo stack) / Map (leaderboard)
-  File handling: ScoreHistory (java.nio Files, UTF-8), Achievements (Properties file)
-  Enum with fields: Difficulty, Achievements.Badge
-  Multi-threading: ComputerPlayer.chooseMoveAsync and SoundManager (Thread, sleep,
-                   interrupt, join, daemon threads)
-  Synchronization: synchronized methods in ScoreHistory
-  Algorithm: Minimax with alpha-beta pruning
-  GUI (Swing + Java 2D): JFrame, CardLayout, JTable, event handling, Timer animation,
-                   custom painting (confetti, animated X/O)
+ 
